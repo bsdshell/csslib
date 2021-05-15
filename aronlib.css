@@ -5,3 +5,20 @@
     align-items:center;
     position:relative;
 }
+
+.box {
+  position: absolute;
+  height: 45%;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(145, 145, 145), rgb(220, 220, 220));
+  z-index: 4;
+  bottom: -10%;
+  display: grid;
+  grid-template-colums: 35px 255px 35px;
+  grid-template-rows: 85px 25px 25px;
+  grid-template-areas:
+    "one two two three"
+    "four four four four"
+    "five five five five";
+  column-gap: 10px;
+}
